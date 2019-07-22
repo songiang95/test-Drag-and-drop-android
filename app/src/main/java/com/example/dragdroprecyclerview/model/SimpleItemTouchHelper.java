@@ -60,6 +60,7 @@ public class SimpleItemTouchHelper extends ItemTouchHelper.Callback {
                 && viewHolder instanceof Adapter.FileViewHolder
                 && mAdapter.getFolder(mToPos) instanceof Folder) {
             mAdapter.onItemMoved(mFromPos, mToPos);
+            Log.d("abba", "clearView:");
         }
     }
 }
